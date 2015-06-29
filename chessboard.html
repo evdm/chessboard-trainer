@@ -1,0 +1,234 @@
+
+<html lang='en'> 
+<head> 
+	<title>Simple chessboard trainer</title> 
+	<style type="text/css"> 
+		table.chessboard { 
+		border: 2px solid #000000; 
+		}
+		
+		table.chessboard td { 
+		width:80px; 
+		height:80px; 
+		}
+		
+		table.chessboard td.white { 
+		background-color:#ffffff;
+		text-align: center;
+		font-size: xx-large;
+		color: black; 
+		}
+		
+		table.chessboard td.black { 
+		background-color:#444444;
+		text-align: center; 
+		font-size: xx-large;
+		color: white;
+		} 
+	</style>
+
+	<script type="text/javascript">
+
+		function showtext(object){
+			object.innerHTML = object.id;
+		}
+
+		function switchboard(link){
+				var whiteboardstatus = document.getElementById("whiteboard");
+				var blackboardstatus = document.getElementById("blackboard");
+				if (whiteboardstatus.style.display == 'block') {
+					whiteboardstatus.style.display = 'none';
+					blackboardstatus.style.display = 'block';
+					link.innerHTML = 'White';
+				} 
+				else {
+					whiteboardstatus.style.display = 'block';
+					blackboardstatus.style.display = 'none';
+					link.innerHTML = 'Black';
+				
+				}
+		}
+
+	</script>
+
+
+</head>
+
+ 
+<body>
+	<div>
+	 <a href="#" onclick="switchboard(this)">Black</a> 
+	</div>
+	 
+	<div id="whiteboard" style="display: block;">
+		 <table class="chessboard"> 
+			<tr> 
+				<td id="a8" class="white" onclick="showtext(this) "></td> 
+				<td id="b8" class="black" onclick="showtext(this) "></td> 
+				<td id="c8" class="white" onclick="showtext(this) "></td> 
+				<td id="d8" class="black "onclick="showtext(this) "></td> 
+				<td id="e8" class="white" onclick="showtext(this) "></td> 
+				<td id="f8" class="black" onclick="showtext(this) "></td> 
+				<td id="g8" class="white" onclick="showtext(this) "></td> 
+				<td id="h8" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+			<tr> 
+				<td id="a7" class="black" onclick="showtext(this) "></td> 
+				<td id="b7" class="white" onclick="showtext(this) "></td> 
+				<td id="c7" class="black" onclick="showtext(this) "></td> 
+				<td id="d7" class="white" onclick="showtext(this) "></td> 
+				<td id="e7" class="black" onclick="showtext(this) "></td> 
+				<td id="f7" class="white" onclick="showtext(this) "></td> 
+				<td id="g7" class="black" onclick="showtext(this) "></td>
+				<td id="h7" class="white" onclick="showtext(this) "></td>  
+			</tr> 
+			<tr> 
+				<td id="a6" class="white" onclick="showtext(this) "></td> 
+				<td id="b6" class="black" onclick="showtext(this) "></td> 
+				<td id="c6" class="white" onclick="showtext(this) "></td> 
+				<td id="d6" class="black" onclick="showtext(this) "></td> 
+				<td id="e6" class="white" onclick="showtext(this) "></td> 
+				<td id="f6" class="black" onclick="showtext(this) "></td> 
+				<td id="g6" class="white" onclick="showtext(this) "></td> 
+				<td id="h6" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+			<tr> 
+				<td id="a5" class="black" onclick="showtext(this) "></td> 
+				<td id="b5" class="white" onclick="showtext(this) "></td> 
+				<td id="c5" class="black" onclick="showtext(this) "></td> 
+				<td id="d5" class="white" onclick="showtext(this) "></td> 
+				<td id="e5" class="black" onclick="showtext(this) "></td> 
+				<td id="f5" class="white" onclick="showtext(this) "></td> 
+				<td id="g5" class="black" onclick="showtext(this) "></td>
+				<td id="h5" class="white" onclick="showtext(this) "></td>  
+			</tr> 
+			<tr> 
+				<td id="a4" class="white" onclick="showtext(this) "></td> 
+				<td id="b4" class="black" onclick="showtext(this) "></td> 
+				<td id="c4" class="white" onclick="showtext(this) "></td> 
+				<td id="d4" class="black" onclick="showtext(this) "></td> 
+				<td id="e4" class="white" onclick="showtext(this) "></td> 
+				<td id="f4" class="black" onclick="showtext(this) "></td> 
+				<td id="g4" class="white" onclick="showtext(this) "></td> 
+				<td id="h4" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+			<tr> 
+				<td id="a3" class="black" onclick="showtext(this) "></td> 
+				<td id="b3" class="white" onclick="showtext(this) "></td> 
+				<td id="c3" class="black" onclick="showtext(this) "></td> 
+				<td id="d3" class="white" onclick="showtext(this) "></td> 
+				<td id="e3" class="black" onclick="showtext(this) "></td> 
+				<td id="f3" class="white" onclick="showtext(this) "></td> 
+				<td id="g3" class="black" onclick="showtext(this) "></td>
+				<td id="h3" class="white" onclick="showtext(this) "></td>  
+			</tr> 
+			<tr> 
+				<td id="a2" class="white" onclick="showtext(this) "></td> 
+				<td id="b2" class="black" onclick="showtext(this) "></td> 
+				<td id="c2" class="white" onclick="showtext(this) "></td> 
+				<td id="d2" class="black" onclick="showtext(this) "></td> 
+				<td id="e2" class="white" onclick="showtext(this) "></td> 
+				<td id="f2" class="black" onclick="showtext(this) "></td> 
+				<td id="g2" class="white" onclick="showtext(this) "></td> 
+				<td id="h2" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+			<tr> 
+				<td id="a1" class="black" onclick="showtext(this) "></td> 
+				<td id="b1" class="white" onclick="showtext(this) "></td> 
+				<td id="c1" class="black" onclick="showtext(this) "></td> 
+				<td id="d1" class="white" onclick="showtext(this) "></td> 
+				<td id="e1" class="black" onclick="showtext(this) "></td> 
+				<td id="f1" class="white" onclick="showtext(this) "></td> 
+				<td id="g1" class="black" onclick="showtext(this) "></td>
+				<td id="h1" class="white" onclick="showtext(this) "></td>  
+			</tr>
+		</table>	
+	</div>
+
+	<div id="blackboard" style="display: none;">
+		<table class="chessboard">	
+			<tr> 
+				<td id="a1" class="black" onclick="showtext(this) "></td> 
+				<td id="b1" class="white" onclick="showtext(this) "></td> 
+				<td id="c1" class="black" onclick="showtext(this) "></td> 
+				<td id="d1" class="white" onclick="showtext(this) "></td> 
+				<td id="e1" class="black" onclick="showtext(this) "></td> 
+				<td id="f1" class="white" onclick="showtext(this) "></td> 
+				<td id="g1" class="black" onclick="showtext(this) "></td>
+				<td id="h1" class="white" onclick="showtext(this) "></td>  
+			</tr> 
+			<tr> 
+				<td id="a2" class="white" onclick="showtext(this) "></td> 
+				<td id="b2" class="black" onclick="showtext(this) "></td> 
+				<td id="c2" class="white" onclick="showtext(this) "></td> 
+				<td id="d2" class="black" onclick="showtext(this) "></td> 
+				<td id="e2" class="white" onclick="showtext(this) "></td> 
+				<td id="f2" class="black" onclick="showtext(this) "></td> 
+				<td id="g2" class="white" onclick="showtext(this) "></td> 
+				<td id="h2" class="black" onclick="showtext(this) "></td> 
+			</tr>
+			<tr> 
+				<td id="a3" class="black" onclick="showtext(this) "></td> 
+				<td id="b3" class="white" onclick="showtext(this) "></td> 
+				<td id="c3" class="black" onclick="showtext(this) "></td> 
+				<td id="d3" class="white" onclick="showtext(this) "></td> 
+				<td id="e3" class="black" onclick="showtext(this) "></td> 
+				<td id="f3" class="white" onclick="showtext(this) "></td> 
+				<td id="g3" class="black" onclick="showtext(this) "></td>
+				<td id="h3" class="white" onclick="showtext(this) "></td>  
+			</tr>	
+			<tr> 
+				<td id="a4" class="white" onclick="showtext(this) "></td> 
+				<td id="b4" class="black" onclick="showtext(this) "></td> 
+				<td id="c4" class="white" onclick="showtext(this) "></td> 
+				<td id="d4" class="black" onclick="showtext(this) "></td> 
+				<td id="e4" class="white" onclick="showtext(this) "></td> 
+				<td id="f4" class="black" onclick="showtext(this) "></td> 
+				<td id="g4" class="white" onclick="showtext(this) "></td> 
+				<td id="h4" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+			<tr> 
+				<td id="a5" class="black" onclick="showtext(this) "></td> 
+				<td id="b5" class="white" onclick="showtext(this) "></td> 
+				<td id="c5" class="black" onclick="showtext(this) "></td> 
+				<td id="d5" class="white" onclick="showtext(this) "></td> 
+				<td id="e5" class="black" onclick="showtext(this) "></td> 
+				<td id="f5" class="white" onclick="showtext(this) "></td> 
+				<td id="g5" class="black" onclick="showtext(this) "></td>
+				<td id="h5" class="white" onclick="showtext(this) "></td>  
+			</tr>  
+			<tr> 
+				<td id="a6" class="white" onclick="showtext(this) "></td> 
+				<td id="b6" class="black" onclick="showtext(this) "></td> 
+				<td id="c6" class="white" onclick="showtext(this) "></td> 
+				<td id="d6" class="black" onclick="showtext(this) "></td> 
+				<td id="e6" class="white" onclick="showtext(this) "></td> 
+				<td id="f6" class="black" onclick="showtext(this) "></td> 
+				<td id="g6" class="white" onclick="showtext(this) "></td> 
+				<td id="h6" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+
+			<tr> 
+				<td id="a7" class="black" onclick="showtext(this) "></td> 
+				<td id="b7" class="white" onclick="showtext(this) "></td> 
+				<td id="c7" class="black" onclick="showtext(this) "></td> 
+				<td id="d7" class="white" onclick="showtext(this) "></td> 
+				<td id="e7" class="black" onclick="showtext(this) "></td> 
+				<td id="f7" class="white" onclick="showtext(this) "></td> 
+				<td id="g7" class="black" onclick="showtext(this) "></td>
+				<td id="h7" class="white" onclick="showtext(this) "></td>  
+			</tr> 
+
+			<tr> 
+				<td id="a8" class="white" onclick="showtext(this) "></td> 
+				<td id="b8" class="black" onclick="showtext(this) "></td> 
+				<td id="c8" class="white" onclick="showtext(this) "></td> 
+				<td id="d8" class="black "onclick="showtext(this) "></td> 
+				<td id="e8" class="white" onclick="showtext(this) "></td> 
+				<td id="f8" class="black" onclick="showtext(this) "></td> 
+				<td id="g8" class="white" onclick="showtext(this) "></td> 
+				<td id="h8" class="black" onclick="showtext(this) "></td> 
+			</tr> 
+		</table>	
+	</div>	
+</body> 
